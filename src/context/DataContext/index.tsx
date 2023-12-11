@@ -24,12 +24,12 @@ export const useData = () => {
   const context = useContext(DataContext);
 
   if (!context)
-    throw new Error('useDate only can be used inset <DataContextProdiver>');
+    throw new Error('useDate only can be used inset <DataContextProvider>');
   return context;
 };
 
 export const BASE_URL_VENDAS = 'https://data.origamid.dev/vendas/';
-export function DataContextProdiver({ children }: PropsWithChildren) {
+export function DataContextProvider({ children }: PropsWithChildren) {
   const [inicio, setInicio] = useState(getDate(30));
   const [final, setFinal] = useState(getDate(0));
   const { data, loading, error } = useFetch<IVendas[]>(

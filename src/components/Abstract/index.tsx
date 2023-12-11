@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useData } from '../../context/DataContext';
 import { StatusVendas } from '../../context/DataContext/type';
 
-export function Abstract() {
+export const  Abstract = ()=> {
   const { data } = useData();
 
   const totalBy = useCallback(
@@ -31,19 +31,27 @@ export function Abstract() {
     <section className="flex w-ful gap-gap my-6">
       <div className="box flex-1">
         <h2 className="font-bold text-xl mb-2 text-color-1">Vendas</h2>
-        <span className="text-lg font-bold text-color-2">{totalBy()}</span>
+        <span
+          className="text-lg font-bold text-color-2"
+          data-testid="total"
+        >
+          {totalBy()}
+        </span>
       </div>
 
       <div className="box flex-1">
         <h2 className="font-bold text-xl mb-2 text-color-1">Recebido</h2>
-        <span className="text-lg font-bold text-color-2">
+        <span className="text-lg font-bold text-color-2" data-testid="pago">
           {totalBy('pago')}
         </span>
       </div>
 
       <div className="box flex-1">
         <h2 className="font-bold text-xl mb-2 text-color-1">Processando</h2>
-        <span className="text-lg font-bold text-color-2">
+        <span
+          className="text-lg font-bold text-color-2"
+          data-testid="processando"
+        >
           {totalBy('processando')}
         </span>
       </div>

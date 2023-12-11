@@ -35,7 +35,8 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/prefer-default-export': 0,
     'react/jsx-props-no-spreading': 0,
-    // 'react-refresh/only-export-components': 'off',
-    // '@typescript-eslint/no-unused-vars': 'off',
+    'react-refresh/only-export-components': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/function-component-definition': 'off',
   },
 };

@@ -6,10 +6,5 @@
         "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true
     },
-    "include": [
-        "vite.config.ts"
-    ],
-    "exclude": [
-        "src/babel.config.js"
-    ]
+   "include": ["vite.config.ts", ".eslintrc.cjs"],
 }
