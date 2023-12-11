@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    background: theme('colors.color-4');
+    color: theme('colors.color-2');
+    @apply p-9;
+  }
+}
+@layer components {
+  .box {
+    background: theme('colors.color-5');
+    padding: theme('spacing.gap');
+    @apply rounded-lg shadow-lg;
+  }
+
+  .container {
+    padding: theme('spacing.gap');
+    gap: theme('spacing.gap');
+    @apply grid;
+  }
+
+  .label-dateInput {
+    @apply flex items-center mb-4 text-lg font-bold text-color-2 p-2 bg-color-4 rounded-xl;
+  }
+
+  .input-dateInput {
+    @apply flex items-center mb-4 text-lg font-medium text-color-2 p-2 bg-color-4 rounded-xl;
+  }
+}

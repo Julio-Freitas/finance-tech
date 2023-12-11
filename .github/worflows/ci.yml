@@ -1,0 +1,22 @@
+name: Continus Integration
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup node
+        with:
+          node-version: ${{ matrix.node-version }}
+     - name: running testingfin
+       run: |
+            npm ci
+            npm run test
