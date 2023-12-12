@@ -37,7 +37,6 @@ jest.mock('../../../context/DataContext', () => ({
   }),
 }));
 
-
 describe('<Abstract />', () => {
   it('should render component', async () => {
     await act(async () =>
@@ -47,8 +46,8 @@ describe('<Abstract />', () => {
         </DataContextProvider>
       )
     );
-      expect(screen.getByTestId('pago')).toHaveTextContent('R$ 540,00');
-      expect(screen.getByTestId('processando')).toHaveTextContent('R$ 140,00');
-      expect(screen.getByTestId('total')).toHaveTextContent('R$ 680,00');
+    expect(screen.getByTestId('pago')).toHaveTextContent('R$ 540,00');
+    expect(screen.getByTestId('processando')).toHaveTextContent('R$ 140,00');
+    expect(screen.getByTestId('total')).toHaveTextContent('R$ 680,00');
   });
 });

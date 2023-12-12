@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
-import resumo from '../../assets/icons/resumo.svg';
-import vendas from '../../assets/icons/vendas.svg';
+import vendas from 'src/assets/icons/vendas.svg';
+import resumo from 'src/assets/icons/resumo.svg';
 import FintechSVG from '../Fintech';
 
 export function Sidenav() {
   return (
-    <nav className="box bg-3 gap-gap mr-6 h-screen bg-color-3 w-72">
+    <nav className="box bg-3 gap-gap mr-6  !p-0 h-screen bg-color-3 w-72">
       <div className="p-8">
         <FintechSVG title="Fintech Logo" />
       </div>
