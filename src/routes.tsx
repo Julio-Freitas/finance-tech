@@ -6,7 +6,7 @@ export function FintechRoute() {
   return (
     <BrowserRouter>
       <div className="grid grid-rows-2 grid-flow-col">
-        <div className="row-span-3 order-1 pl-4">
+        <div className="row-span-3 order-1">
           <Sidenav />
         </div>
         <main className="row-span-0 col-span-2 order-1">

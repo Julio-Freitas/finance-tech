@@ -1,12 +1,12 @@
 import { Dispatch, SetStateAction } from 'react';
 
 export type StatusVendas = 'pago' | 'processando' | 'falha';
-
+export type TypePagamentos = 'boleto' | 'cartao' | 'pix';
 export type IVendas = {
   id: string;
   nome: string;
   preco: number;
-  pagamento: 'boleto' | 'cartao' | 'pix';
+  pagamento: TypePagamentos;
   parcelas: number | null;
   status: StatusVendas;
   data: string;

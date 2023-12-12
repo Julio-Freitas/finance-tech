@@ -4,7 +4,6 @@ export function AbstractPage() {
   return (
     <section>
       <Abstract />
-      <div>Chart</div>
     </section>
   );
 }

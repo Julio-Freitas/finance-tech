@@ -6,3 +6,4 @@ export { Abstract } from './Abstract';
 export { Sales } from './Sales';
 export { Sale } from './Sale';
 export { Loading } from './Loading';
+export { ChartSale } from './ChartSale';
