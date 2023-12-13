@@ -32,7 +32,7 @@ jobs:
 
     steps:
       - name: Install Dependencies
-        run: npm install
+        run:  npm ci
 
       - name: build project
         run: npm run build
