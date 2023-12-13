@@ -48,7 +48,7 @@ jobs:
           name: production-files
           path: ./dist
 
-   deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
