@@ -47,3 +47,18 @@ jobs:
         with:
           name: production-files
           path: ./dist
+
+   deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_DEPLOY }}
+          publish_dir: ./dist
+
