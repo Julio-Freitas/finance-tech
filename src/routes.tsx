@@ -12,7 +12,7 @@ export function FintechRoute() {
         <main className="row-span-0 col-span-2 order-1">
           <Header />
           <Routes>
-            <Route path="/" element={<AbstractPage />} />
+            <Route path="/finance-tech" element={<AbstractPage />} />
             <Route path="/vendas" element={<SalesPage />} />
             <Route path="/vendas/:id" element={<SalePage />} />
           </Routes>
