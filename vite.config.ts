@@ -14,5 +14,5 @@ export default defineConfig({
       'src/': resolve(__dirname, 'src') + '/',
     },
   },
-  base: '/finance-tech/',
+  base: '/finance-tech/'
 });
