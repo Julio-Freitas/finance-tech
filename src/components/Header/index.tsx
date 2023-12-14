@@ -12,9 +12,11 @@ export function Header() {
 
   return (
     <header className="mb-4">
-      <div className="mb-4 grid grid-cols-2 gap-6">
-        <DateRange />
-        <h1 className="box bg-color-3 text-2xl font-bold">{title}</h1>
+      <div className="mb-4 flex  justify-between sm:flex-col lg:flex-row gap-6">
+        <div className="flex-1">
+          <DateRange />
+        </div>
+        <h1 className="box flex-[.5] bg-color-3 text-2xl font-bold">{title}</h1>
       </div>
       <Months />
     </header>

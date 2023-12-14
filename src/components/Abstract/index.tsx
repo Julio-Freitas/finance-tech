@@ -28,7 +28,7 @@ export const Abstract = () => {
   if (!data) return null;
 
   return (
-    <section className="flex w-ful gap-gap my-6">
+    <section className="flex w-ful gap-gap my-">
       <div className="box flex-1">
         <h2 className="font-bold text-xl mb-2 text-color-1">Vendas</h2>
         <span className="text-lg font-bold text-color-2" data-testid="total">

@@ -6,7 +6,9 @@ export function AbstractPage() {
   return (
     <section>
       <Abstract />
-      <ChartSale data={data ?? []} />
+      <div className="mt-8">
+        <ChartSale data={data ?? []} />
+      </div>
     </section>
   );
 }

@@ -12,7 +12,7 @@ export function Sidenav() {
   pathname.replace(/\//gi, '');
 
   return (
-    <nav className="box bg-3 gap-gap mr-6  !p-0 h-screen bg-color-3 w-72">
+    <nav className="box bg-3 gap-6 lg:mr-6 sm:mr-0 !p-0 sm:h-[300px] lg:h-screen bg-color-3 lg:w-full">
       <div className="p-8">
         <FintechSVG title="Fintech Logo" />
       </div>
@@ -35,7 +35,7 @@ export function Sidenav() {
         </li>
         <li
           className={`${classLi} data-[active="true"]:bg-color-2 data-[active="true"]:text-color-4`}
-          data-active={pathname.replace(/\//gi, '') === 'vendas'}
+          data-active={pathname.replace(/\//gi, '') === 'finance-techvendas'}
         >
           <span>
             <img
@@ -44,7 +44,7 @@ export function Sidenav() {
               className="w-10 h-10 max-w-max rounded-full p-2 bg-color-4"
             />
           </span>
-          <NavLink to="vendas">
+          <NavLink to="/finance-tech/vendas">
             <b>Vendas</b>
           </NavLink>
         </li>

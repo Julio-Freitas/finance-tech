@@ -9,14 +9,14 @@ export function Sales() {
   if (!data) return null;
   return (
     <ul>
-      <li className="box my-4 grid grid-cols-[auto,auto,1fr] justify-between">
-        <div className="font-mono w-1/3">
-          <h2>#ID ASS {id}</h2>
+      <li className="box my-4 grid grid-cols-[auto,auto,1fr] gap-6 items-center justify-between">
+        <div className="font-mono w-[250px]">
+          <h2>#ID {id}</h2>
         </div>
         <div className="w-1/3">
           <h2>Nome</h2>
         </div>
-        <div className="w-1/3 justify-self-end">
+        <div className="w-1/3 justify-self-end text-center">
           {' '}
           <h2>Preço</h2>
         </div>
