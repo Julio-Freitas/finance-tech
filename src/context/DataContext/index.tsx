@@ -33,6 +33,7 @@ export const BASE_URL_VENDAS = 'https://data.origamid.dev/vendas/';
 export function DataContextProvider({ children }: PropsWithChildren) {
   const [inicio, setInicio] = useState(getDate(30));
   const [final, setFinal] = useState(getDate(0));
+
   const { data, loading, error } = useFetch<IVendas[]>(
     `${BASE_URL_VENDAS}?inicio=${inicio}&final=${final}`
   );
